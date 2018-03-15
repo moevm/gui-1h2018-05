@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/pictures">
+        <file>pictures/mona.jpg</file>
+        <file>pictures/vozr.jpg</file>
+        <file>pictures/post.jpg</file>
+        <file>pictures/impr.jpg</file>
+        <file>pictures/vozr.png</file>
+        <file>pictures/klas.jpg</file>
+        <file>pictures/real.jpg</file>
+        <file>pictures/roko.jpg</file>
+        <file>pictures/roma.jpg</file>
+        <file>pictures/sure.jpg</file>
+        <file>pictures/abst.jpg</file>
+    </qresource>
+</RCC>
