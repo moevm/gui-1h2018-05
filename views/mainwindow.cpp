@@ -7,13 +7,21 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow),
+    m_controller(new Controller(this))
 {
     ui->setupUi(this);
+    this->showMaximized();
+
+    connect(m_controller, SIGNAL(dataBaseIsConnected()), this, SLOT(onDataBaseConnected()));
+    connect(m_controller, SIGNAL(dataBaseIsDisconnected()), this, SLOT(onDataBaseDisconnected()));
+
+    m_controller->openDataBase();
 }
 
 MainWindow::~MainWindow()
 {
+    delete m_controller;
     delete ui;
 }
 
@@ -55,7 +63,7 @@ void MainWindow::on_pushButton_6_clicked()
 
 void MainWindow::on_pushButton_5_clicked()
 {
-    StudyWindow window;
+    GameWindow window(this);
     window.setModal(true);
     window.exec();
 }
@@ -83,65 +91,90 @@ void MainWindow::on_pushButton_10_clicked()
 
 void MainWindow::on_vozr_clicked()
 {
-
-    StudyWindow gwindow;
+    QString style = ui->vozrozjdenie_label->text();
+    StudyWindow gwindow(m_controller, style, this);
     gwindow.setModal(true);
     gwindow.exec();
 }
 
 void MainWindow::on_impr_clicked()
 {
-    StudyWindow gwindow;
+    QString style = ui->impressionism_label->text();
+    StudyWindow gwindow(m_controller, style, this);
     gwindow.setModal(true);
     gwindow.exec();
 }
 
 void MainWindow::on_post_clicked()
 {
-    StudyWindow gwindow;
+    QString style = ui->postimpressionism_label->text();
+    StudyWindow gwindow(m_controller, style, this);
     gwindow.setModal(true);
     gwindow.exec();
 }
 
 void MainWindow::on_klas_clicked()
 {
-    StudyWindow gwindow;
+    QString style = ui->classicism_label->text();
+    StudyWindow gwindow(m_controller, style, this);
     gwindow.setModal(true);
     gwindow.exec();
 }
 
 void MainWindow::on_real_clicked()
 {
-    StudyWindow gwindow;
+    QString style = ui->realism_label->text();
+    StudyWindow gwindow(m_controller, style, this);
     gwindow.setModal(true);
     gwindow.exec();
 }
 
 void MainWindow::on_roko_clicked()
 {
-    StudyWindow gwindow;
+    QString style = ui->simvolism_label->text();
+    StudyWindow gwindow(m_controller, style, this);
     gwindow.setModal(true);
     gwindow.exec();
 }
 
 void MainWindow::on_roma_clicked()
 {
-    StudyWindow gwindow;
+    QString style = ui->romantism_label->text();
+    StudyWindow gwindow(m_controller, style, this);
     gwindow.setModal(true);
     gwindow.exec();
 }
 
 void MainWindow::on_sure_clicked()
 {
-    StudyWindow gwindow;
+    QString style = ui->surrealism_label->text();
+    StudyWindow gwindow(m_controller, style, this);
     gwindow.setModal(true);
     gwindow.exec();
 }
 
 void MainWindow::on_abst_clicked()
 {
-    StudyWindow gwindow;
+    QString style = ui->abstractionism_label->text();
+    StudyWindow gwindow(m_controller, style, this);
     gwindow.setModal(true);
     gwindow.exec();
 }
 
+void MainWindow::onDataBaseConnected()
+{
+    qDebug() << "Database is connected";
+}
+
+void MainWindow::onDataBaseDisconnected()
+{
+    qDebug() << "Database is disconnected";
+}
+
+
+void MainWindow::on_AddButton_clicked()
+{
+    AddPict window;
+    window.setModal(true);
+    window.exec();
+}

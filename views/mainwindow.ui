@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralwidget {background-color: rgb(255, 213, 214)}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <widget class="QFrame" name="frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>500</width>
+        <height>500</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>700</width>
+        <height>700</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="vozrozjdenie_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Возрождение</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="impressionism_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Импрессионизм</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="postimpressionism_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Постимпрессионизм</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="vozr">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#vozr {border-image: url(:/pictures/pictures/vozr.png);}
+#vozr:hover{
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 1px;
+	border-image: url(:/pictures/pictures/vozr.png);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="impr">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#impr {border-image: url(:/pictures/pictures/impr.jpg);}
+#impr:hover{
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 1px;
+	border-image: url(:/pictures/pictures/impr.jpg);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="post">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#post {border-image: url(:/pictures/pictures/post.jpg);}
+#post:hover{
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 1px;
+	border-image: url(:/pictures/pictures/post.jpg);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_2 {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#pushButton_2:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+         </property>
+         <property name="text">
+          <string>Играть</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_3 {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#pushButton_3:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+         </property>
+         <property name="text">
+          <string>Играть</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_4  {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#pushButton_4:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+         </property>
+         <property name="text">
+          <string>Играть</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="classicism_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Классицизм </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="realism_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Реализм</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="simvolism_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Символизм</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="klas">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#klas {border-image: url(:/pictures/pictures/klas.jpg);}
+#klas:hover{
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 1px;
+	border-image: url(:/pictures/pictures/klas.jpg);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="real">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#real {border-image: url(:/pictures/pictures/real.jpg);}
+#real:hover{
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 1px;
+	border-image: url(:/pictures/pictures/real.jpg);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="roko">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#roko {border-image: url(:/pictures/pictures/roko.jpg);}
+#roko:hover{
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 1px;
+	border-image: url(:/pictures/pictures/roko.jpg);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_7 {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#pushButton_7:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+         </property>
+         <property name="text">
+          <string>Играть</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_6 {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#pushButton_6:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+         </property>
+         <property name="text">
+          <string>Играть</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_5 {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#pushButton_5:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+         </property>
+         <property name="text">
+          <string>Играть</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="romantism_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Романтизм</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="surrealism_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Сюрреализм</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLabel" name="abstractionism_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Абстракционизм</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QPushButton" name="roma">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#roma {border-image: url(:/pictures/pictures/roma.jpg);}
+#roma:hover{
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 1px;
+	border-image: url(:/pictures/pictures/roma.jpg);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QPushButton" name="sure">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#sure {border-image: url(:/pictures/pictures/sure.jpg);}
+#sure:hover{
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 1px;
+	border-image: url(:/pictures/pictures/sure.jpg);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QPushButton" name="abst">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#abst {border-image: url(:/pictures/pictures/abst.jpg);}
+#abst:hover{
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 1px;
+	border-image: url(:/pictures/pictures/abst.jpg);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_8 {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#pushButton_8:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+         </property>
+         <property name="text">
+          <string>Играть</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_9 {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#pushButton_9:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+         </property>
+         <property name="text">
+          <string>Играть</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="font">
+          <font>
+           <family>Segoe Print</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_10 {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#pushButton_10:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+         </property>
+         <property name="text">
+          <string>Играть</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Expanding</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>100</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="2">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Expanding</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>100</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="0" colspan="3">
+     <widget class="QPushButton" name="AddButton">
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#AddButton {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#AddButton:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+      </property>
+      <property name="text">
+       <string>Добавить картину</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1366</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

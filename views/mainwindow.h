@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "controllers/controller.h"
 
 namespace Ui {
 class MainWindow;
@@ -54,8 +55,16 @@ private slots:
     void on_abst_clicked();
 
 
+    void on_AddButton_clicked();
+
+public slots:
+    void onDataBaseConnected();
+    void onDataBaseDisconnected();
+
 private:
     Ui::MainWindow *ui;
+
+    Controller* m_controller;
 };
 
 #endif // MAINWINDOW_H

@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT += sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,22 +26,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-    mainwindow.cpp \
-    studywindow.cpp \
-    gamewindow.cpp \
-    addpict.cpp
+    views/mainwindow.cpp \
+    views/studywindow.cpp \
+    views/gamewindow.cpp \
+    views/addpict.cpp \
+    controllers/controller.cpp \
+    models/databaseadapter.cpp
 
 HEADERS += \
-    mainwindow.h \
-    studywindow.h \
-    gamewindow.h \
-    addpict.h
+    views/mainwindow.h \
+    views/studywindow.h \
+    views/gamewindow.h \
+    views/addpict.h \
+    controllers/controller.h \
+    models/databaseadapter.h
 
 FORMS += \
-    mainwindow.ui \
-    studywindow.ui \
-    gamewindow.ui \
-    addpict.ui
+    views/mainwindow.ui \
+    views/studywindow.ui \
+    views/gamewindow.ui \
+    views/addpict.ui
 
 RESOURCES += \
     resource.qrc
