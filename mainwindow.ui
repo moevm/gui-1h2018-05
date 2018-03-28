@@ -371,7 +371,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Рококо</string>
+     <string>Символизм</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
@@ -669,6 +669,33 @@
   outline: none; 
 } 
 #pushButton_10:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+    </property>
+    <property name="text">
+     <string>Играть</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddButton">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>930</y>
+      <width>190</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#AddButton {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#AddButton:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
 </string>
     </property>
     <property name="text">

@@ -27,17 +27,20 @@ SOURCES += \
         main.cpp \
     mainwindow.cpp \
     studywindow.cpp \
-    gamewindow.cpp
+    gamewindow.cpp \
+    addpict.cpp
 
 HEADERS += \
     mainwindow.h \
     studywindow.h \
-    gamewindow.h
+    gamewindow.h \
+    addpict.h
 
 FORMS += \
     mainwindow.ui \
     studywindow.ui \
-    gamewindow.ui
+    gamewindow.ui \
+    addpict.ui
 
 RESOURCES += \
     resource.qrc

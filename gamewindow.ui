@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>GameWindow</class>
  <widget class="QDialog" name="GameWindow">
@@ -5,13 +6,128 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>1300</width>
+    <height>1000</height>
    </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1300</width>
+    <height>1000</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#GameWindow{background-color: rgb(255, 213, 214)}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>0</y>
+     <width>471</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Во что будем играть?</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonGame1">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>130</y>
+     <width>571</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Угадай автора картины!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonGame2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>370</y>
+     <width>571</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#GameWindow{background-color: rgb(255, 213, 214)}</string>
+   </property>
+   <property name="text">
+    <string>Угадай название картины!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonGame3">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>600</y>
+     <width>571</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Да или нет!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backGame">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>910</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#backGame {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#backGame:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+   </property>
+   <property name="text">
+    <string>Назад</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
