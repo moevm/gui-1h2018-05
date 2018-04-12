@@ -6,128 +6,97 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1300</width>
-    <height>1000</height>
+    <width>400</width>
+    <height>266</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>150</y>
-     <width>111</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Изображение</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>80</y>
-     <width>211</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Добавление картины</string>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="textEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>440</y>
-     <width>351</width>
-     <height>31</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>360</y>
-     <width>131</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Художник</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>440</y>
-     <width>121</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Год написания</string>
-   </property>
-  </widget>
-  <widget class="QGraphicsView" name="graphicsView">
-   <property name="geometry">
-    <rect>
-     <x>530</x>
-     <y>130</y>
-     <width>261</width>
-     <height>181</height>
-    </rect>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 70), stop:1 rgba(255, 255, 255, 46));</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="backGame">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>550</y>
-     <width>111</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Segoe Print</family>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton#backGame {
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="5" column="2">
+    <widget class="QTextEdit" name="yearTextEdit"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Художник</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QGraphicsView" name="graphicsView">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 70), stop:1 rgba(255, 255, 255, 46));</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Добавление картины</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Изображение</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Год написания</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Выбрать</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="3">
+    <widget class="QPushButton" name="backGame">
+     <property name="font">
+      <font>
+       <family>Segoe Print</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#backGame {
   color: rgb(23, 23, 23); /* цвет текста */
   background: rgb(112, 112, 112); /* фон кнопки */
   outline: none; 
 } 
 #backGame:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
 </string>
-   </property>
-   <property name="text">
-    <string>Назад</string>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="textEdit">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>360</y>
-     <width>351</width>
-     <height>31</height>
-    </rect>
-   </property>
-  </widget>
+     </property>
+     <property name="text">
+      <string>Ок</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QComboBox" name="comboBox"/>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLineEdit" name="titleLineEdit"/>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLabel" name="titleLabel">
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

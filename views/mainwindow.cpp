@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->showMaximized();
+    ui->AddButton->hide();
 
     connect(m_controller, SIGNAL(dataBaseIsConnected()), this, SLOT(onDataBaseConnected()));
     connect(m_controller, SIGNAL(dataBaseIsDisconnected()), this, SLOT(onDataBaseDisconnected()));
@@ -172,9 +173,7 @@ void MainWindow::onDataBaseDisconnected()
 }
 
 
-void MainWindow::on_AddButton_clicked()
+void MainWindow::on_signInPushButton_clicked()
 {
-    AddPict window;
-    window.setModal(true);
-    window.exec();
+    LoginDialog(m_controller, this).exec();
 }

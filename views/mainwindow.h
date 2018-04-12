@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include "controllers/controller.h"
 
+#include "views/logindialog.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -54,8 +56,7 @@ private slots:
 
     void on_abst_clicked();
 
-
-    void on_AddButton_clicked();
+    void on_signInPushButton_clicked();
 
 public slots:
     void onDataBaseConnected();

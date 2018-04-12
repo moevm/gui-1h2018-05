@@ -25,6 +25,7 @@ signals:
 public slots:
     QStringList readFromTable(QString data, QString tableName);
     QStringList readFromTable(QString data, QString tableName, QString condition);
+    void insertData(QString column, QString value, QString tableName);
 
     QSqlQuery runSQL(QString request);
 };

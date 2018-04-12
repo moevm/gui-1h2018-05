@@ -31,7 +31,10 @@ SOURCES += \
     views/gamewindow.cpp \
     views/addpict.cpp \
     controllers/controller.cpp \
-    models/databaseadapter.cpp
+    models/databaseadapter.cpp \
+    views/admindialog.cpp \
+    views/logindialog.cpp \
+    views/addartistdialog.cpp
 
 HEADERS += \
     views/mainwindow.h \
@@ -39,13 +42,19 @@ HEADERS += \
     views/gamewindow.h \
     views/addpict.h \
     controllers/controller.h \
-    models/databaseadapter.h
+    models/databaseadapter.h \
+    views/admindialog.h \
+    views/logindialog.h \
+    views/addartistdialog.h
 
 FORMS += \
     views/mainwindow.ui \
     views/studywindow.ui \
     views/gamewindow.ui \
-    views/addpict.ui
+    views/addpict.ui \
+    views/admindialog.ui \
+    views/logindialog.ui \
+    views/addartistdialog.ui
 
 RESOURCES += \
     resource.qrc

@@ -4,6 +4,8 @@
 #include <QObject>
 #include <QFileDialog>
 
+#include <chrono>
+
 #include "models/databaseadapter.h"
 
 
@@ -16,6 +18,7 @@ public:
 
 protected:
     DataBaseAdapter* dataBaseAdapter;
+    std::mt19937 m_random_generator;
 
 signals:
     void dataBaseIsConnected();
@@ -32,6 +35,11 @@ public slots:
     QStringList getPicturesNamesByArtist(QString artist);
     QString getPictureImageName(QString artist, QString title);
     QString getPictureYear(QString artist, QString title);
+    QList< std::pair<QString, QString> > getAllAdmins();
+    QStringList getAllArtists();
+
+    void addArtist(QString style, QString fio);
+    void addPicture(QString title, QString author, QString code, QString year, QString originPath);
 };
 
 #endif // CONTROLLER_H

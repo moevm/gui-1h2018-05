@@ -90,6 +90,38 @@ QStringList DataBaseAdapter::readFromTable(QString data, QString tableName, QStr
     return response;
 }
 
+void DataBaseAdapter::insertData(QString column, QString value, QString tableName)
+{
+    QStringList response;
+    QString request = "INSERT INTO " + tableName + " (" + column + ") VALUES ('" + value + "');";
+    qDebug() << request;
+    QSqlQuery query;
+    if(query.prepare(request))
+    {
+        if(query.exec())
+        {
+            if(query.lastError().text() != " ")
+            {
+                qDebug() << query.lastError().text();
+            }
+            while (query.next())
+            {
+                QString parametr = query.value(0).toString();
+                response.push_back(parametr);
+            }
+        }
+        else
+        {
+            QMessageBox(QMessageBox::Warning, "Ошибка", "Не могу выполнить запрос!");
+        }
+    }
+    else
+    {
+        QMessageBox(QMessageBox::Warning, "Ошибка", "Не могу подготовить запрос!");
+    }
+    qDebug() << "response" << response;
+}
+
 QSqlQuery DataBaseAdapter::runSQL(QString request)
 {
     qDebug() << request;

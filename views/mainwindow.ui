@@ -24,7 +24,7 @@
     <string notr="true">QWidget#centralwidget {background-color: rgb(255, 213, 214)}</string>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="1">
+    <item row="3" column="1">
      <widget class="QFrame" name="frame">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -667,7 +667,7 @@
       </layout>
      </widget>
     </item>
-    <item row="1" column="0">
+    <item row="3" column="0">
      <spacer name="horizontalSpacer">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -683,7 +683,7 @@
       </property>
      </spacer>
     </item>
-    <item row="1" column="2">
+    <item row="3" column="2">
      <spacer name="horizontalSpacer_2">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -716,7 +716,29 @@
 </string>
       </property>
       <property name="text">
-       <string>Добавить картину</string>
+       <string>Играть</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="signInPushButton">
+      <property name="font">
+       <font>
+        <family>Segoe Print</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#signInPushButton {
+  color: rgb(23, 23, 23); /* цвет текста */
+  background: rgb(112, 112, 112); /* фон кнопки */
+  outline: none; 
+} 
+#signInPushButton:hover { background: rgb(133, 133, 133); } /* при наведении курсора мышки */
+</string>
+      </property>
+      <property name="text">
+       <string>Войти как администратор</string>
       </property>
      </widget>
     </item>
