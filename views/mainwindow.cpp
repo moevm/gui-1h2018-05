@@ -28,64 +28,63 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    GameWindow window;
+    GameWindow window(m_controller, ui->vozrozjdenie_label->text(), this);
     window.setModal(true);
     window.exec();
 }
 
 void MainWindow::on_pushButton_3_clicked()
 {
-    GameWindow window;
+    GameWindow window(m_controller, ui->impressionism_label->text(), this);
     window.setModal(true);
     window.exec();
 }
 
 void MainWindow::on_pushButton_4_clicked()
 {
-    hide();
-    GameWindow window;
+    GameWindow window(m_controller, ui->postimpressionism_label->text(), this);
     window.setModal(true);
     window.exec();
 }
 
 void MainWindow::on_pushButton_7_clicked()
 {
-    GameWindow window;
+    GameWindow window(m_controller, ui->classicism_label->text(), this);
     window.setModal(true);
     window.exec();
 }
 
 void MainWindow::on_pushButton_6_clicked()
 {
-    GameWindow window;
+    GameWindow window(m_controller, ui->realism_label->text(), this);
     window.setModal(true);
     window.exec();
 }
 
 void MainWindow::on_pushButton_5_clicked()
 {
-    GameWindow window(this);
+    GameWindow window(m_controller, ui->simvolism_label->text(), this);
     window.setModal(true);
     window.exec();
 }
 
 void MainWindow::on_pushButton_8_clicked()
 {
-    GameWindow window;
+    GameWindow window(m_controller, ui->romantism_label->text(), this);
     window.setModal(true);
     window.exec();
 }
 
 void MainWindow::on_pushButton_9_clicked()
 {
-    GameWindow window;
+    GameWindow window(m_controller, ui->surrealism_label->text(), this);
     window.setModal(true);
     window.exec();
 }
 
 void MainWindow::on_pushButton_10_clicked()
 {
-    GameWindow window;
+    GameWindow window(m_controller, ui->abstractionism_label->text(), this);
     window.setModal(true);
     window.exec();
 }

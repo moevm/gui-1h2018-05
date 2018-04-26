@@ -34,7 +34,9 @@ SOURCES += \
     models/databaseadapter.cpp \
     views/admindialog.cpp \
     views/logindialog.cpp \
-    views/addartistdialog.cpp
+    views/addartistdialog.cpp \
+    views/firstgamedialog.cpp \
+    views/secondgamedialog.cpp
 
 HEADERS += \
     views/mainwindow.h \
@@ -45,7 +47,9 @@ HEADERS += \
     models/databaseadapter.h \
     views/admindialog.h \
     views/logindialog.h \
-    views/addartistdialog.h
+    views/addartistdialog.h \
+    views/firstgamedialog.h \
+    views/secondgamedialog.h
 
 FORMS += \
     views/mainwindow.ui \
@@ -54,7 +58,9 @@ FORMS += \
     views/addpict.ui \
     views/admindialog.ui \
     views/logindialog.ui \
-    views/addartistdialog.ui
+    views/addartistdialog.ui \
+    views/firstgamedialog.ui \
+    views/secondgamedialog.ui
 
 RESOURCES += \
     resource.qrc
